@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Web Animasi</title>
+  <style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .header {
+      background-color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .header__title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .header__subtitle {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px 0;
+    }
+
+    .feature {
+      background-color: #fff;
+      text-align: center;
+      padding: 50px;
+      flex: 1;
+      margin: 0 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature__icon {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .feature__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .feature__description {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" data-aos="fade-down">
+    <h1 class="header__title">Contoh Web Animasi</h1>
+    <p class="header__subtitle">Dengan AOS Framework</p>
+  </header>
+
+  <section class="features">
+    <div class="feature" data-aos="zoom-in">
+      <i class="feature__icon fas fa-desktop"></i>
+      <h2 class="feature__title">Responsif</h2>
+      <p class="feature__description">Tampilan web akan menyesuaikan dengan ukuran layar perangkat pengguna.</p>
+    </div>
+
+    <div class="feature" data-aos="zoom-in">
+      <i class="feature__icon fas fa-paint-brush"></i>
+      <h2 class="feature__title">Desain Menarik</h2>
+      <p class="feature__description">Desain yang menarik dan modern untuk menarik perhatian pengguna.</p>
+    </div>
+
+    <div class="feature" data-aos="zoom-in">
+      <i class="feature__icon fas fa-code"></i>
+      <h2 class="feature__title">Kode Bersih</h2>
+      <p class="feature__description">Mengikuti standar coding terbaik untuk memastikan kualitas dan kemudahan maintenance.</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html
